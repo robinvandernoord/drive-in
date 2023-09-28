@@ -9,7 +9,7 @@ Minimalistic Google Drive Library for Python.
     <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"/></a>
     <a href="https://opensource.org/licenses/MIT"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg"/></a>
     <br/>
-    <a href="https://github.com/trialandsuccess/drive-in/actions"><img alt="su6 checks" src="https://github.com/trialandsuccess/drive-in/actions/workflows/su6.yml/badge.svg?branch=development"/></a>
+    <a href="https://github.com/robinvandernoord/drive-in/actions"><img alt="su6 checks" src="https://github.com/robinvandernoord/drive-in/actions/workflows/su6.yml/badge.svg?branch=development"/></a>
 </div>
 
 -----
