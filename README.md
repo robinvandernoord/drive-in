@@ -1,5 +1,7 @@
 # drive_in
 
+Minimalistic Google Drive Library for Python.
+
 [![PyPI - Version](https://img.shields.io/pypi/v/drive-in.svg)](https://pypi.org/project/drive-in)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/drive-in.svg)](https://pypi.org/project/drive-in)
 
