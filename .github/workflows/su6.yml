@@ -13,5 +13,5 @@ jobs:
         with:
           python-version: '3.10'
           cache: 'pip' # caching pip dependencies
-      - run: pip install .[all]
+      - run: pip install .[dev]
       - run: su6 all
