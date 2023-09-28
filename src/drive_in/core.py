@@ -18,7 +18,7 @@ from yayarl import URL
 
 from ._constants import AUTH_TOKEN_FILE, CLIENT_ID, REDIRECT_URI, SCOPE
 from .helpers import OutputManager, extract_google_id, get_size
-from .types import AnyDict, Result, T, UploadError
+from .types import AnyDict, DownloadError, Result, T, UploadError
 
 
 class Drive:  # pragma: no cover
@@ -263,6 +263,12 @@ class Drive:  # pragma: no cover
             # bytesio, textiowrapper
             url &= session
             metadata = self.get(url)
+
+            if not metadata.success:
+                raise DownloadError(
+                    status_code=metadata._response.status_code,
+                    message=metadata._response.text,
+                )
 
             if to_file is None:
                 filepath = Path(metadata.data["name"])

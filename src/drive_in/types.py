@@ -28,6 +28,16 @@ class UploadError(BaseDriveInException):
 
 
 @dataclass
+class DownloadError(BaseDriveInException):
+    """
+    Raised when something goes wrong while uploading to Drive.
+    """
+
+    status_code: int
+    message: str
+
+
+@dataclass
 class Result:
     """
     Container for API request responses.

@@ -73,12 +73,49 @@ drive.upload(file_path)
 # Download a file from Google Drive 
 file_id = "your_file_id_here"
 downloaded_file = drive.download(file_id)
+# if no output target is passed, it is saved to the same name as it has on drive. 
+# A reference to the file handle is returned.
 ```
 
 ### Accessing other Drive API Endpoints
 
+Other than `upload` and `download`, you can access REST resources with the HTTP verbs (GET, POST, PATCH, DELETE):
+
 ```python
-...
+drive.get("files")  # perform GET /drive/v3/files
+# returns a Result object which has .success (bool) and .data (dict) properties.
+# _response and _url internal properties are available if you need access to this raw info.
+
+drive.post("files/123/comments", data=dict(content="...")) # perform POST to create a new comment.
+
+drive.delete("files/123")  # perform DELETE /drive/v3/files/123
+
+resource = drive.resource("files") / 123  # dynamically build up the resource string
+drive.delete(resource)  # also performs DELETE /drive/v3/files/123
+```
+
+See [the Google Drive API page](https://developers.google.com/drive/api/reference/rest/v3) for information about
+available resources.
+
+## Authentication
+This library works only a public OAuth Client ID. 
+Since it is open source, a secret config or key can not be shared. 
+This leads to some limitations with how much the app can access. 
+Unfortunately, you can only access files created by this app (i.e. uploaded by it).
+
+### OAuth Callback
+Since oauth requires a callback URL, you're redirected to "https://oauth.trialandsuccess.nl/callback" after logging in.
+This page simply echoes the access token from the request parameters using [oauth-echoer](https://github.com/trialandsuccess/oauth-echoer).
+
+You can also provide you own Client ID and callback URL when initializing a Drive instance:
+```python
+custom_clientid = "123-abc.apps.googleusercontent.com"
+custom_url = "https://yoursite.com/callback"
+
+drive = Drive(
+    client_id=custom_clientid,
+    redirect_uri=custom_url,
+  )
 ```
 
 ## License
