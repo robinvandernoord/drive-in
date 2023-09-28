@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.1 (2023-09-28)
+### Documentation
+* Fixed su6 action badge ([`7ac72c3`](https://github.com/robinvandernoord/drive-in/commit/7ac72c3f1708f33d97a5859690b3f213e77fd2aa))
+
 ## v0.1.0 (2023-09-28)
 ### Feature
 * Download should now work as well ([`530a237`](https://github.com/robinvandernoord/drive-in/commit/530a2376447d064b95ff1422d15e4c70951843ba))
