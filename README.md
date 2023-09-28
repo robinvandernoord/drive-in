@@ -1,10 +1,16 @@
-# drive_in
+# Drive-in
 
 Minimalistic Google Drive Library for Python.
 
-[![PyPI - Version](https://img.shields.io/pypi/v/drive-in.svg)](https://pypi.org/project/drive-in)
-[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/drive-in.svg)](https://pypi.org/project/drive-in)
-
+<div align="center">
+    <a href="https://pypi.org/project/drive-in"><img alt="PyPI - Version" src="https://img.shields.io/pypi/v/drive-in.svg"/></a>
+    <a href="https://pypi.org/project/drive-in"><img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/drive-in.svg"/></a>
+    <br/>
+    <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"/></a>
+    <a href="https://opensource.org/licenses/MIT"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg"/></a>
+    <br/>
+    <a href="https://github.com/trialandsuccess/drive-in/actions"><img alt="su6 checks" src="https://github.com/trialandsuccess/drive-in/actions/workflows/su6.yml/badge.svg?branch=development"/></a>
+</div>
 -----
 
 **Table of Contents**
