@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 src-layout = true
 
 [tool.setuptools.package-data]
-"configuraptor" = ["py.typed"]
+"drive_in" = ["py.typed"]
 
 [project]
 name = "drive-in"
@@ -29,7 +29,9 @@ classifiers = [
     "Programming Language :: Python :: Implementation :: PyPy",
 ]
 dependencies = [
-    "yayarl"
+    "yayarl",
+    "configuraptor >= 1.20.0",
+    "tqdm",
 ]
 
 [project.optional-dependencies]
@@ -41,9 +43,9 @@ dev = [
 
 
 [project.urls]
-Documentation = "https://github.com/unknown/drive-in#readme"
-Issues = "https://github.com/unknown/drive-in/issues"
-Source = "https://github.com/unknown/drive-in"
+Documentation = "https://github.com/robinvandernoord/drive-in#readme"
+Issues = "https://github.com/robinvandernoord/drive-in/issues"
+Source = "https://github.com/robinvandernoord/drive-in"
 
 [tool.hatch.version]
 path = "src/drive_in/__about__.py"
@@ -51,7 +53,7 @@ path = "src/drive_in/__about__.py"
 
 [tool.semantic_release]
 branch = "master"
-version_variable = "src/configuraptor/__about__.py:__version__"
+version_variable = "src/drive_in/__about__.py:__version__"
 change_log = "CHANGELOG.md"
 upload_to_repository = false
 upload_to_release = false

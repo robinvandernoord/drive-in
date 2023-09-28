@@ -4,3 +4,11 @@
 """
 Exposes most important library functionality.
 """
+
+from .core import Drive, DriveSingleton
+
+__all__ = [
+    # core
+    "Drive",
+    "DriveSingleton",
+]
