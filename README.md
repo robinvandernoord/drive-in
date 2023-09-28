@@ -11,6 +11,7 @@ Minimalistic Google Drive Library for Python.
     <br/>
     <a href="https://github.com/trialandsuccess/drive-in/actions"><img alt="su6 checks" src="https://github.com/trialandsuccess/drive-in/actions/workflows/su6.yml/badge.svg?branch=development"/></a>
 </div>
+
 -----
 
 **Table of Contents**
@@ -28,14 +29,15 @@ Minimalistic Google Drive Library for Python.
 - **File Upload**: Seamlessly upload files to your Google Drive, with support for multi-part uploads. You can specify
   the file's name and the destination folder.
 
-- **File Download**: Download files from Google Drive, although this part is a work in progress and requires further
-  development.
+- **File Download**: Download files from Google Drive, also with multipart support. *
 
 - **API Interaction**: Interact with the Google Drive API through a simplified interface, making it effortless to
-  perform operations like creating, updating, and deleting files or folders.
+  perform operations like creating, updating, and deleting files or folders. *
 
 - **Error Handling**: Drive-In includes error handling to help you handle unexpected situations, such as failed API
   requests.
+
+_* Due to Authentication Limitations, you can only view and edit files that were created using this tool._
 
 ## Installation
 
@@ -60,7 +62,7 @@ This will prompt the user for authentication.
 ```python
 # Check if the authentication token is valid
 if drive.ping():
-    print("Authentication is successful.")
+    print("Authentication is successful and server responds well.")
 else:
     print("Authentication failed.")
 ```
