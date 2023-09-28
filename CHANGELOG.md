@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.2 (2023-09-28)
+### Fix
+* Add py.typed file to indicate typing ([`8c338aa`](https://github.com/robinvandernoord/drive-in/commit/8c338aa5c8ca3de0c5762fff111833acf5e3af46))
+
 ## v0.1.1 (2023-09-28)
 ### Documentation
 * Fixed su6 action badge ([`7ac72c3`](https://github.com/robinvandernoord/drive-in/commit/7ac72c3f1708f33d97a5859690b3f213e77fd2aa))
