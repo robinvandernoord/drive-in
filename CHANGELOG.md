@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.3 (2023-10-02)
+### Fix
+* Make progress bar on download display as MBs instead of bytes ([`dd84636`](https://github.com/robinvandernoord/drive-in/commit/dd846368289c0b518ba2ea572dd8e7ac37479dcd))
+
 ## v0.1.2 (2023-09-28)
 ### Fix
 * Add py.typed file to indicate typing ([`8c338aa`](https://github.com/robinvandernoord/drive-in/commit/8c338aa5c8ca3de0c5762fff111833acf5e3af46))
