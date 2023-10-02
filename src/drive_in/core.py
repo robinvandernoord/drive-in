@@ -294,7 +294,7 @@ class Drive:  # pragma: no cover
         chunk_size = chunks_size_mb * 1024 * 1024
         start = 0
         current_content_length = 0
-        with tqdm.tqdm(total=total_content_length or 0) as progress:
+        with tqdm.tqdm(total=total_content_length or 0, unit="B", unit_scale=True, unit_divisor=1024) as progress:
             while True:
                 end = start + chunk_size - 1
 
