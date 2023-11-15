@@ -20,6 +20,15 @@ from ._constants import AUTH_TOKEN_FILE, CLIENT_ID, REDIRECT_URI, SCOPE
 from .helpers import OutputManager, extract_google_id, get_size
 from .types import AnyDict, DownloadError, Result, T, UploadError
 
+try:
+    from requests.exceptions import JSONDecodeError as RequestsJSONDecodeError
+except ImportError:
+
+    class RequestsJSONDecodeError(json.JSONDecodeError):  # type: ignore
+        """
+        Fallback for older versions of `requests`.
+        """
+
 
 class Drive:  # pragma: no cover
     """
@@ -64,7 +73,7 @@ class Drive:  # pragma: no cover
         try:
             data = resp.json()
             data = typing.cast(AnyDict, data)
-        except json.JSONDecodeError:
+        except (json.JSONDecodeError, RequestsJSONDecodeError):
             data = {}
 
         return Result(
