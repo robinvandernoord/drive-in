@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.4 (2023-11-15)
+### Fix
+* Requests resp.json() now throws a custom error :/ ([`5485d6d`](https://github.com/robinvandernoord/drive-in/commit/5485d6d4c30063e7151c135f28dab22fa6fda06d))
+
 ## v0.1.3 (2023-10-02)
 ### Fix
 * Make progress bar on download display as MBs instead of bytes ([`dd84636`](https://github.com/robinvandernoord/drive-in/commit/dd846368289c0b518ba2ea572dd8e7ac37479dcd))
