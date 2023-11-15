@@ -234,7 +234,7 @@ class Drive:  # pragma: no cover
         self,
         file_id: str,
         to_file: str | Path | typing.IO[T] | None = None,
-        chunks_size_mb: int = 10,
+        chunks_size_mb: int = 25,
         overwrite: bool = True,
     ) -> typing.IO[T]:
         """
