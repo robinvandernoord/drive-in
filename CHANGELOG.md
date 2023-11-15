@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.5 (2023-11-15)
+### Fix
+* Increased download chunk size to speed up big downloads ([`f47a29e`](https://github.com/robinvandernoord/drive-in/commit/f47a29e4a9bbb9881d3d019293da410ed468ca64))
+
 ## v0.1.4 (2023-11-15)
 ### Fix
 * Requests resp.json() now throws a custom error :/ ([`5485d6d`](https://github.com/robinvandernoord/drive-in/commit/5485d6d4c30063e7151c135f28dab22fa6fda06d))
