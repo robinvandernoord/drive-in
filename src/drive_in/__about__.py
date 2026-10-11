@@ -5,4 +5,6 @@
 This file stores the version.
 """
 
-__version__ = "0.1.5"
+from importlib.metadata import version
+
+__version__ = version("drive-in")
